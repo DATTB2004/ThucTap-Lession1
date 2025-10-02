@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "microservice",
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "react",
+    "clientTestFrameworks": [],
+    "clientTheme": "none",
+    "creationTimestamp": 1759399989921,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "feignClient": true,
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "ZjBhMjViMzE4Y2VlMjg2NmRhYTFkNjU0YjU1MDRkM2EzYTdjYmFiODE1OTdmZDcwZDgzODcyZDQ5ZTQwYzgwOTE5MzM2OWNlMTEwNjdkMjNjN2E1ZjZkY2I0YTRjZWI0ZTA0ZTdjNGNiMzZhOGIxMDYxZjQ5Yzk5ZjY1M2NkNWM=",
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "packageName": "com.bksoft",
+    "prodDatabaseType": "postgresql",
+    "reactive": false,
+    "serverPort": 8081,
+    "serviceDiscoveryType": "eureka",
+    "syncUserWithIdp": null,
+    "testFrameworks": [],
+    "withAdminUi": true
+  }
+}
