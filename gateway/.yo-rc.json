@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "applicationType": "gateway",
+    "authenticationType": "jwt",
+    "baseName": "gateway",
+    "buildTool": "maven",
+    "cacheProvider": null,
+    "clientFramework": "react",
+    "clientTestFrameworks": [],
+    "clientTheme": "none",
+    "creationTimestamp": 1759388161533,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": null,
+    "enableTranslation": true,
+    "entities": [],
+    "feignClient": null,
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "MTIyNzQxNGVlMGNlZTI4MGZkNDIwY2VkMjhiMmM2MTY3ZTdlZjhmYjY5ZWFkZWNlMmEwN2ZjMTdmY2YwOGJiZDM2NmFjYTMyZmI2ZGEyNTVhOWVhNWQzNzQ4OTJhZTQ2NWNkYTJkYjA1MGNjYWRmOTAxOThlMjM0NmQzZTA1YmE=",
+    "languages": ["en"],
+    "microfrontend": false,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "packageName": "com.bksoft",
+    "prodDatabaseType": "postgresql",
+    "reactive": true,
+    "serverPort": 8080,
+    "serviceDiscoveryType": "eureka",
+    "syncUserWithIdp": null,
+    "testFrameworks": [],
+    "withAdminUi": true
+  }
+}
