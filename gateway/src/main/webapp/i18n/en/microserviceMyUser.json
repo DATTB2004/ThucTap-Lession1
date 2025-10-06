@@ -1,0 +1,30 @@
+{
+  "gatewayApp": {
+    "microserviceMyUser": {
+      "home": {
+        "title": "My Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new My User",
+        "createOrEditLabel": "Create or edit a My User",
+        "notFound": "No My Users found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete My User {{ id }}?"
+      },
+      "detail": {
+        "title": "My User"
+      },
+      "id": "ID",
+      "idUser": "Id User",
+      "userName": "User Name",
+      "password": "Password"
+    }
+  },
+  "microserviceApp": {
+    "microserviceMyUser": {
+      "created": "A new My User is created with identifier {{ param }}",
+      "updated": "A My User is updated with identifier {{ param }}",
+      "deleted": "A My User is deleted with identifier {{ param }}"
+    }
+  }
+}

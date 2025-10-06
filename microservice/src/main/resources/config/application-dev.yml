@@ -55,7 +55,7 @@ spring:
       # it can be set to any label, branch or commit of the configuration source Git repository
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:15432/microservice
+    url: jdbc:postgresql://localhost:5440/microservice?useUnicode=true&characterEncoding=utf8&useSSL=false&TimeZone=Asia/Ho_Chi_Minh
     username: microservice
     password:
     hikari:
@@ -82,9 +82,9 @@ server:
 
 jhipster:
   cache: # Cache configuration
-    ehcache: # Ehcache configuration
-      time-to-live-seconds: 3600 # By default objects stay 1 hour in the cache
-      max-entries: 100 # Number of objects in each cache entry
+    hazelcast: # Hazelcast distributed cache
+      time-to-live-seconds: 3600
+      backup-count: 1
   registry:
     password: admin
   # CORS is disabled by default on microservices, as you should access them through a gateway.
@@ -100,7 +100,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: ZjBhMjViMzE4Y2VlMjg2NmRhYTFkNjU0YjU1MDRkM2EzYTdjYmFiODE1OTdmZDcwZDgzODcyZDQ5ZTQwYzgwOTE5MzM2OWNlMTEwNjdkMjNjN2E1ZjZkY2I0YTRjZWI0ZTA0ZTdjNGNiMzZhOGIxMDYxZjQ5Yzk5ZjY1M2NkNWM=
+        base64-secret: MTIyNzQxNGVlMGNlZTI4MGZkNDIwY2VkMjhiMmM2MTY3ZTdlZjhmYjY5ZWFkZWNlMmEwN2ZjMTdmY2YwOGJiZDM2NmFjYTMyZmI2ZGEyNTVhOWVhNWQzNzQ4OTJhZTQ2NWNkYTJkYjA1MGNjYWRmOTAxOThlMjM0NmQzZTA1YmE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
@@ -121,3 +121,10 @@ jhipster:
 # ===================================================================
 
 # application:
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
