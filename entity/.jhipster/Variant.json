@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20251006041131"
+  },
+  "applications": "*",
+  "clientRootFolder": "entity",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "stock",
+      "fieldType": "Integer"
+    }
+  ],
+  "microserviceName": "entity",
+  "name": "Variant",
+  "relationships": [
+    {
+      "otherEntityName": "attributeValue",
+      "otherEntityRelationshipName": "variant",
+      "relationshipName": "attributeValue",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "variant",
+      "relationshipName": "product",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

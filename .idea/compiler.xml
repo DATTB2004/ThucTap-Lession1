@@ -32,6 +32,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/unknown/jaxb-runtime-unknown.jar" />
         </processorPath>
         <module name="microservice" />
+        <module name="entity" />
       </profile>
       <profile name="Annotation profile for JHipster Registry" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -46,6 +47,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="entity" target="17" />
       <module name="gateway" target="17" />
       <module name="jhipster-registry" target="17" />
       <module name="microservice" target="17" />
@@ -53,6 +55,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="entity" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="microservice" options="-parameters" />
     </option>

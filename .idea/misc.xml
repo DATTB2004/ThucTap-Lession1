@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/jhipster-registry/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/entity/pom.xml" />
       </list>
     </option>
   </component>

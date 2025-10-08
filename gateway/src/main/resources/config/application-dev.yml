@@ -90,6 +90,7 @@ jhipster:
       duration-in-seconds: 3600
     authorized-microservices-endpoints:
       microservice: http://localhost:8081
+      entity: http://localhost:8082
   registry:
     password: admin
   # CORS is only enabled by default with the "dev" profile

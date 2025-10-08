@@ -1,0 +1,27 @@
+// ------------------ ENTITIES ------------------
+entity Product {
+  name String required
+}
+
+entity Variant {
+  price BigDecimal
+  stock Integer
+}
+
+entity Attribute {
+  name String required
+}
+
+entity AttributeValue {
+  value String required
+}
+
+// ------------------ RELATIONSHIPS ------------------
+relationship OneToMany {
+  Product{variant} to Variant{product}
+  Variant{attributeValue} to AttributeValue{variant}
+}
+
+relationship ManyToOne {
+  AttributeValue{attribute} to Attribute
+}

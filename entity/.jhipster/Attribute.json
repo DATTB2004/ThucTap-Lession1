@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "changelogDate": "20251006041132"
+  },
+  "applications": "*",
+  "clientRootFolder": "entity",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "microserviceName": "entity",
+  "name": "Attribute",
+  "relationships": [],
+  "searchEngine": "no"
+}

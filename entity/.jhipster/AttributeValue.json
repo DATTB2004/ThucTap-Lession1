@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20251006041133"
+  },
+  "applications": "*",
+  "clientRootFolder": "entity",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "microserviceName": "entity",
+  "name": "AttributeValue",
+  "relationships": [
+    {
+      "otherEntityName": "attribute",
+      "relationshipName": "attribute",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "variant",
+      "otherEntityRelationshipName": "attributeValue",
+      "relationshipName": "variant",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
